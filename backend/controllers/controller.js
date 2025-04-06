@@ -14,7 +14,7 @@ function checkUserExist(login, password=-1){
 }
 
 const sendHello = (req, res) => {
-    res.json({ message: 'Hello from Express mzfk!' });
+    res.json({ message: 'Hello from Express!' });
 }
 
 const loginController = (req, res) => {
@@ -54,7 +54,7 @@ const signUpController = (req, res) => {
 }
 
 const secretController = (req, res) => {
-    res.status(200).json({secret: 'PHINEAS\'S PLAKTYPUS IS A PERRY THE PLATYPUS!!!'});
+    res.status(200).json({secret: 'OMG ONE PIECE IS REAL!!!'});
 }
 
 const jwtCheckController = (req, res, next) => {
