@@ -1,6 +1,6 @@
 const CryptoJS = require("crypto-js");
 const JWT = require('jsonwebtoken');
-const pool = require('../../db/db.js');
+const pool = require('../db/db.js');
 
 const JWT_KEY = 'my secret key';
 const users = [];
@@ -54,7 +54,7 @@ const signUpController = (req, res) => {
 }
 
 const secretController = (req, res) => {
-    res.status(200).json({secret: 'OMG ONE PIECE IS REAL!!!'});
+    res.status(200).json({secret: `OMG ONE PIECE IS REAL!!!`});
 }
 
 const jwtCheckController = (req, res, next) => {
